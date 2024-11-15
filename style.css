@@ -15,11 +15,71 @@
     background: lightgoldenrodyellow;
     padding: 10px;
     border-radius: 20px;
+    min-width: 300px;
     width: 25%;
     min-height: 50%;
-    margin: 15vh auto ;
+    margin: 15vh auto;
 }
+
 #mainspace {
     margin: 40px auto;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#maker {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 20px;
+    list-style: none;
+    padding: 12px;
+    cursor: pointer;
+
+}
+
+/* ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(assets/unchecked.png);
+    background-size: cover;
+    background-position: center ;
+
+} */
+li img {
+    border: 2px;
+    height: 20px;
+    width: 20px;
+    /* top: 12px;
+    left: 8px; */
+    margin-right: 12px;
+}
+
+ul li.checked {
+    color: #ffcc99;
+    text-decoration: line-through;
+
+}
+
+#cut {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+}
+
+#cut:hover {
+    background: lightgray;
+    border-radius: 50%;
 }
